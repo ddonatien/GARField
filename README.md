@@ -12,16 +12,18 @@ cd GARField
 pip install -r requirements.txt
 ```
 
+Download [sample data](https://dataverse.iit.it/dataset.xhtml?persistentId=doi:10.48557/UETPNP) and unzip in `GARField/data`
+
 ## Training
 
 ``` sh
-python run.py --mode train_render --conf confs/sock.conf --case sock_cap_0 --gpu 0
+python run.py --mode train_render --conf confs/sock.conf --case sock_cap_sample --gpu 0
 ```
 
 ## Image generation
 
 ``` sh
-python run.py --mode render_novel --conf confs/sock.conf --case sock_cap_0 --gpu 0  --model <MODEL_FILE>.pth
+python run.py --mode render_novel --conf confs/sock.conf --case sock_cap_sample --gpu 0  --model <MODEL_FILE>.pth
 ```
 
 ## Citation
