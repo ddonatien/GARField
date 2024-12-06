@@ -6,9 +6,23 @@ GARField (Garment Attached Radiance Field) adresses the data problem in deformab
 
 ## Installation
 
+``` sh
+git clone git@github.com:ddonatien/GARField.git
+cd GARField
+pip install -r requirements.txt
+```
+
 ## Training
 
+``` sh
+python run.py --mode train_render --conf confs/sock.conf --case sock_cap_0 --gpu 0
+```
+
 ## Image generation
+
+``` sh
+python run.py --mode render_novel --conf confs/sock.conf --case sock_cap_0 --gpu 0  --model <MODEL_FILE>.pth
+```
 
 ## Citation
 ```
